@@ -23,7 +23,7 @@ jobs:
           java-version: '17'
 
       - name: 안드로이드 도구 준비
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Android SDK 35 설치
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
