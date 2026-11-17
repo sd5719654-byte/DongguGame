@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.donggu.game'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.donggu.game'
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // The website and APK use the same game files, with no duplicated logic.
+    sourceSets {
+        main {
+            assets.srcDirs += ["${rootDir}/../web"]
+        }
+    }
+}
+

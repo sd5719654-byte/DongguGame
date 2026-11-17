@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "동구게임",
+  "short_name": "동구게임",
+  "description": "4명이 함께 즐기는 트럼프 카드 벌칙 게임",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#062a24",
+  "theme_color": "#062a24",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
